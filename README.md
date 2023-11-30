@@ -1,10 +1,10 @@
-#Final Year Major Project 
+# Final Year Major Project 
 Project members:
 * Abhiram Deshpande
 * Avishkar Ghadge
 * Rutuja Kadam
 * Prasad Suryawanshi
   
-##Project Title:
+## Project Title:
 Enhancement of X-Ray radio graphs using Deep Learning
 
