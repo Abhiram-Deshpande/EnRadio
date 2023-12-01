@@ -11,17 +11,17 @@ Welcome to the project EnRadio. The corresponding repository contain code for bo
 ## Getting started with the project
 Following steps will help you to get started with this project on your local machine.
 1. Clone the repository.
- > git clone https://github.com/Abhiram-Deshpande/EnRadio.git
+   ` git clone https://github.com/Abhiram-Deshpande/EnRadio.git`
 
 2. After clonning, you need to install dependencies for both Front-end and Back-End part:
    * For Front-End part go to project-frontend (make sure that you have latest version of [NodeJs](https://nodejs.org/en/download) installed):
-     > npm run install
+     ` npm run install`
    * For Back-End part go to project-backend (make sure that you have latest version of [Django](https://docs.djangoproject.com/en/4.2/topics/install/) installed):
-     >  pip install -r requirements.txt
+     ` pip install -r requirements.txt`
 
 3. To start the Node development server for serving front-end :
-   > npm run start
+   ` npm run start`
    
 4. To start the Django development server for serving back-end :
-   > python3 manage.py runserver  
+   ` python3 manage.py runserver  `
 
