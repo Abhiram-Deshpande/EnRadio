@@ -66,7 +66,7 @@ const ImageUpload = () => {
         <div className="form-container">
         <form onSubmit={handleSubmit}>
           <label htmlFor="title">Title:</label>
-          <input type="text" id="title" value={title} onChange={handleTitleChange} />
+          <input type="text" id="title" value={title} onChange={handleTitleChange} required/>
           <label htmlFor="image">Image:</label>
           <input type="file" id="image" onChange={handleImageChange} />
           <button type="submit">Upload</button>
