@@ -9,8 +9,13 @@
 # testing
 /coverage
 
+# media
+/project-backend/media/
+
 # production
 /project-frontend/build/
+/project-backend/api/
+/project-backend/backend/
 
 # misc
 .DS_Store
