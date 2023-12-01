@@ -13,9 +13,9 @@ Following steps will help you to get started with this project on your local mac
 1. Clone the repository.
  > git clone https://github.com/Abhiram-Deshpande/EnRadio.git
 2. After clonning, you need to install dependencies in both Front-end and Back-End folder
-  1.For Front-End part go to project-frontend (make sure that you have latest version of [NodeJs](https://nodejs.org/en/download) installed):
+ * For Front-End part go to project-frontend (make sure that you have latest version of [NodeJs](https://nodejs.org/en/download) installed):
   > npm run install
-  2. For Back-End part go to project-backend (make sure that you have latest version of [Django](https://docs.djangoproject.com/en/4.2/topics/install/) installed):
+ * For Back-End part go to project-backend (make sure that you have latest version of [Django](https://docs.djangoproject.com/en/4.2/topics/install/) installed):
   >  pip install -r requirements.txt
 3. To start the Node development server for serving front-end :
   > npm run start
