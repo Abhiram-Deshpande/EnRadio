@@ -15,7 +15,6 @@ const Navbar = () => {
       <nav className="main-nav">
         <div className="logo">
         <NavLink to="/">
-         <img src={website_logo} className="website-logo"/>
         </NavLink>  
         </div>
 
@@ -25,23 +24,10 @@ const Navbar = () => {
           }
         >
           <ul>
-            {/* <li className="glassy-button">
-              <NavLink to="/">Home</NavLink>
-            </li>
-             */}
-            
-  
             <li >
               <NavLink to="/"><Button variant="primary" size="large" style={{fontSize: '15px',color:"black",fontWeight:"500"}}>Home</Button></NavLink>
-            </li>
-  
-      
-  
-               
-           
-            {/* <li>
-              <NavLink to="/about">about</NavLink>
-            </li> */}
+            </li> 
+            
             <li className="">
               <NavLink to="/service"><Button variant="primary" size="large" style={{fontSize: '15px',color:"black",fontWeight:"500" }}>Services</Button></NavLink>
             
@@ -71,7 +57,6 @@ const Navbar = () => {
                 href="https://www.youtube.com/watch?v=ES1XZ-N6w3A&ab_channel=NischayMalhan"
                 target="_avishkar"
               >
-                <FaYoutubeSquare className="youtube" />
               </a>
             </li>
           </ul>
