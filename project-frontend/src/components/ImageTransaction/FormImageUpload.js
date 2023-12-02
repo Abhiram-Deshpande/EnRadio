@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./ImageUpload.css"
+import "./FormImageUpload.css"
 import ImageLoad from "./ImageLoad";
+import Navbar from "../Navbar/Navbar";
 
-const ImageUpload = () => {
+const FormImageUpload = () => {
   const api = "http://localhost:8000/api/upload_image/";
   const [title, setTitle] = useState("");
   const [image, setImage] = useState(null);
@@ -28,16 +29,6 @@ const ImageUpload = () => {
         .catch((error) => console.log(error))
     }, [id])
   
-
-  // const loadDeblurred = (e) => {
-  //   axios.get(`http://localhost:8000/api/posts/${id}`)
-  //     .then((response) => {
-  //       let path = response.data.image.replace("incoming_blurred_images", "outgoing_de_blurred_images")
-  //       setOutputImg(prevFilePath => prevFilePath === path ? prevFilePath : path)
-  //     })
-  //     .catch((error) => console.log(error))
-  // }
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -57,18 +48,14 @@ const ImageUpload = () => {
     <div>
       {imageUrl && submited ? (
         <>
-          {/* <h2>{title}</h2> */}
-          {/* <button onClick={loadDeblurred}>Deblur</button> */}
           <ImageLoad image={imageUrl} output={outputImg} />
-        </>
-      ) : (
-        
+        </>) : (
         <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <label htmlFor="title">Title:</label>
+          <label htmlFor="title">Enter the Title</label>
           <input type="text" id="title" value={title} onChange={handleTitleChange} required/>
-          <label htmlFor="image">Image:</label>
-          <input type="file" id="image" onChange={handleImageChange} />
+          <label htmlFor="image">Select Image</label>
+          <input type="file" id="image" onChange={handleImageChange} className="input-file"/>
           <button type="submit">Upload</button>
         </form>
 </div>
@@ -78,4 +65,4 @@ const ImageUpload = () => {
   );
 };
 
-export default ImageUpload;
+export default FormImageUpload;

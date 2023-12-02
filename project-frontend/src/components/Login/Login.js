@@ -1,10 +1,9 @@
 import React from "react";
-import ImageUpload from "../ImageTransaction/ImageUpload";
 
 function Login() {
   return (
     <>
-      <ImageUpload></ImageUpload>
+      <h1>Welcome to Login Section</h1>
     </>
   );
 }

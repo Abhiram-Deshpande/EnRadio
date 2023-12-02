@@ -1,15 +1,8 @@
-
-
-
-
-
 ::placeholder {
   color: deeppink;
   font-size: 5rem;
   text-transform: uppercase;
 }
-
-
 
 .form-container {
   display: flex;
@@ -20,13 +13,12 @@
  
 }
 
-
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
+  justify-content: right;
+  align-items:flex-start;
+  background-color: #90cdfc;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -39,12 +31,8 @@ label {
   font-weight: 600;
   margin-bottom: 10px;
   color: #444;
-
-
-    display: block;
-    text-align: center; 
-  
-
+  display: block;
+  text-align: center; 
 
 }
 
@@ -61,10 +49,6 @@ input[type="file"] {
 }
 
 input[type="file"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 20px;
   width: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -80,19 +64,9 @@ button[type="submit"] {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   line-height: 1.2;
-  /* background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-size: 16px;
-  line-height: 1; */
 }
 
 button[type="submit"]:hover {
-  /* background-color: #3e8e41; */
   background-color: #005ea3;
 }
 
@@ -143,4 +117,13 @@ button[type="submit"]:hover {
   .uploaded-image-container {
     width: 50%;
   }
+}
+
+.input-file{
+  background-color: #005ea3;
+  text-align: center;
+}
+
+#title{
+  width: 100%;
 }

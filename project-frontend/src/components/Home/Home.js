@@ -1,12 +1,7 @@
-
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import './Home.css'
 import myImage from '../../image/ps.png';
-
-// React material Ui Button
-import Button from '@material-ui/core/Button';
-// for link
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
@@ -16,7 +11,7 @@ const Home = () => {
     <div class="ps-section-text">
       <h2>Radiology made Easy.</h2>
       <p>Poor quality of diagnostic images is one of the challenging problem the Radiologists around the world are facing today.Various factors such as <strong>inadvertent patient motion</strong>, <strong>equipment precision settings</strong>, and <strong>image acquisition settings</strong> are roots of these challenges. Deblurring these images can help to improve the accuracy of diagnosis and treatment.</p>
-      <NavLink to="/service"><button>Read our Blogs</button></NavLink>
+      <NavLink to="/service"><button className="blog-button">Read our Blogs</button></NavLink>
     </div>
     
     <div class="ps-section-image">

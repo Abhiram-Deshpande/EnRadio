@@ -24,18 +24,6 @@
   line-height: 1.5;
 }
 
-.ps-section-text button {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #0072c6;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
 .ps-section-text button:hover {
   background-color: #005ea3;
 }
@@ -56,6 +44,18 @@
 }
 .ps-blur:hover{
   filter: none;
+}
+
+.blog-button{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(230, 64, 42);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .ps-section-content {

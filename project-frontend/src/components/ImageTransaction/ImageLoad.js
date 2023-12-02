@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ImageUpload.css"
+import "./FormImageUpload.css"
 import imageLoadStyle from './ImageLoad.css'
 const ImageLoad = (props) => {
     const { image, output } = props;
