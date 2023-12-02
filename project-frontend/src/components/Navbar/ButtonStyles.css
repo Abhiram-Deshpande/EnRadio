@@ -1,0 +1,17 @@
+#loginButton{
+    background-color: #87afff;
+    border-radius:30px;
+    border-color: transparent;
+    width: 40%;
+    height: 60px;
+}
+#loginButton:hover{
+    cursor: pointer;
+    border-color: #6e9cf8;
+    background-color: white;
+}
+.navigationLinkStyle{
+    font-size: 15px;
+    color:black;
+    font-weight:500;
+}
