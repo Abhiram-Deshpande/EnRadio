@@ -1,61 +1,41 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/Navbar";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route,BrowserRouter as Router } from "react-router-dom";
 import Login from "./components/Login/Login";
-import ImageUpload from "./components/ImageUpload/ImageUpload";
 import "./index.css";
+import axios from "axios";
 import Home from "./components/Home/Home";
 import Service from "./components/Service/Service";
-import { Nav } from "react-bootstrap";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
+import FormImageUpload from "./components/ImageTransaction/FormImageUpload";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-const About = () => {
-  return (
-    <>
-      <Navbar />
-      <section className="hero-section"></section>
-    </>
-  );
-};
-
-const Contact = () => {
-  return (
-    <>
-      <Navbar />
-      <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical Contact Page</h1>
-      </section>
-    </>
-  );
-};
-
 const App = () => {
   return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
+     <Router>
+      <Navbar/>
+      <Switch>
+      
+      <Route exact path="/" component={Home}>
       </Route>
 
-      {/* <Route path="/about">
-        <About />
-      </Route> */}
-
-      <Route path="/service">
-        <Service>
-          {/* <ImageUpload></ImageUpload> */}
-        
-        </Service>
+      <Route exact path="/service" component={Service}>
       </Route>
 
-      <Route>
-        <Navbar></Navbar>
-        <Login></Login>
+      <Route exact path="/about" component={About}>
       </Route>
-    </Switch>
-  );
+
+      <Route exact path="/try-it-out"> 
+      <FormImageUpload/>
+      </Route>
+
+      </Switch>
+      {/* <Footer/> */}
+    </Router>
+   );
 };
 
 export default App;
