@@ -12,30 +12,17 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <Navbar />
-
-  <section class="ps-section">
   <div class="ps-section-content">
     <div class="ps-section-text">
-      <h2>Deblur images within seconds.</h2>
-      <p>Deblurring x-ray images is a challenging problem in image processing due to the nature of x-ray images, which can suffer from blurring caused by various factors such as patient motion, equipment vibrations, and image acquisition settings. Deblurring these images can help to improve the accuracy of diagnosis and treatment.</p>
-             
-        
-        <NavLink to="/service"><button>Learn More</button></NavLink>
-       
+      <h2>Radiology made Easy.</h2>
+      <p>Poor quality of diagnostic images is one of the challenging problem the Radiologists around the world are facing today.Various factors such as <strong>inadvertent patient motion</strong>, <strong>equipment precision settings</strong>, and <strong>image acquisition settings</strong> are roots of these challenges. Deblurring these images can help to improve the accuracy of diagnosis and treatment.</p>
+      <NavLink to="/service"><button>Read our Blogs</button></NavLink>
     </div>
     
     <div class="ps-section-image">
       <img className="ps-blur" src={myImage} alt="Image Description"></img>
     </div>
   </div>
-
-
-</section>
-
-
-
-
     </>
   );
 };

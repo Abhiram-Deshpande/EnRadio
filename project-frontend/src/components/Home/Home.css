@@ -1,17 +1,8 @@
-.ps-section {
-  background-color: #fff;
-  padding: 80px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  margin-top: -40px;
-}
-
 .ps-section-content {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,8 +51,6 @@
   max-width: 100%;
   height: auto;
 }
-
-/* Deblurring Image */
 .ps-blur{
   filter: blur(5px); transition: filter 0.5s ease-out;
 }
@@ -69,21 +58,29 @@
   filter: none;
 }
 @media screen and (max-width: 768px) {
-  .ps-section {
-    padding: 60px 0;
-  }
-  
   .ps-section-content {
-    flex-direction: column;
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
   }
+  .ps-section-content {
+display: block;  
+}
+
+.ps-section-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 16px;
+}
   
   .ps-section-text {
-    margin-right: 0;
-    margin-bottom: 30px;
-    text-align: center;
+    width: 100%;
   }
-  
+  .ps-section-text p{
+    width: 100;
+  }
   .ps-section-image {
     width: 100%;
   }
@@ -94,11 +91,21 @@
 }
 
 @media screen and (max-width: 576px) {
-  .ps-section {
-    padding: 40px 0;
-  }
-  
-  .ps-section-text {
-    max-width: 100%;
-  }
+  .ps-section-content {
+    display: block;  
+    }
+      
+      .ps-section-text {
+        width: 100;
+      }
+      .ps-section-text p{
+        display: block;
+      }
+      .ps-section-image {
+        width: 100%;
+      }
+      
+      .ps-section-image img {
+        margin-top: 30px;
+      }
 }
