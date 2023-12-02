@@ -46,8 +46,12 @@ class UploadImage(APIView):
 
             image_path = request_serializer_data.data['image']
             deblurimage(image_path)
-            return Response(request_serializer_data.data, status.HTTP_201_CREATED)
-        return Response({'response': request_serializer_data.errors}, status.HTTP_400_BAD_REQUEST)
+            return Response(request_serializer_data.data, status.HTTP_201_CREATED)        
+        return Response({
+            "response": request_serializer_data.errors,
+            'ERR_MSG':"Image title is required"
+            },
+              status.HTTP_400_BAD_REQUEST)
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -58,3 +62,11 @@ class PostViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+class CaptureIPAddress(APIView):
+    def get(self,request):
+        ip_address = request.GET.get("'HTTP_X_REAL_IP'")
+        if ip_address is not None:
+            print("Remote IP address is: "+ip_address)
+        return Response({"mesg":"Response Good"},status.HTTP_200_OK)

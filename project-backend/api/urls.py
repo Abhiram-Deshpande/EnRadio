@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import PostView, PostViewSet, UserViewSet, UploadImage
+from .views import PostView, PostViewSet, UserViewSet, UploadImage,CaptureIPAddress
 
 from rest_framework import routers
 
@@ -10,5 +10,6 @@ router.register(r'user', UserViewSet, basename='user')
 urlpatterns = [
     path('', include(router.urls)),
     # path('posts', PostView.as_view(), name= 'posts_list'),
-    path('upload_image/', UploadImage.as_view())
+    path('upload_image/', UploadImage.as_view()),
+    path('capture-ip/',CaptureIPAddress.as_view())
 ]
